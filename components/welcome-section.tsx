@@ -79,33 +79,33 @@ export function WelcomeSection() {
           </motion.div>
 
           <RevealText className="text-[10px] md:text-xs uppercase tracking-[0.4em] mb-6 opacity-60">
-            L'excellence de l'hospitalité
+            Bienvenue à l'Hôtel Sofy
           </RevealText>
 
           <div className="text-4xl md:text-5xl lg:text-7xl font-serif mb-12 leading-tight max-w-4xl tracking-tight">
             <RevealTitle className="inline-block" delay={0.1}>
-              Une Expérience
+              L'Hospitalité
             </RevealTitle>
             <br />
             <RevealTitle className="inline-block italic text-primary/80 mr-4" delay={0.2}>
-              Inoubliable
+              Algérienne
             </RevealTitle>
             <RevealTitle className="inline-block" delay={0.3}>
-              au Coeur de Bouira
+              au Service du Confort
             </RevealTitle>
           </div>
 
           <div className="max-w-2xl space-y-8 text-base md:text-xl leading-relaxed font-light opacity-90">
             <RevealText delay={0.4}>
-              Bienvenue à l'Hôtel Sofy, où le raffinement rencontre le confort moderne.
-              Situé stratégiquement rue des Frères Boussendalah, notre établissement 3 étoiles
-              est le refuge idéal pour vos voyages d'affaires et vos moments de détente.
+              Idéalement situé Rue Frères Boussendalah, face au Centre Universitaire de Bouira,
+              l'Hôtel Sofy est votre destination privilégiée pour des séjours d'affaires productifs
+              ou des escapades de détente en toute sérénité.
             </RevealText>
 
             <RevealText delay={0.6}>
-              De notre restaurant gastronomique à notre terrasse panoramique, chaque détail a été conçu
-              pour sublimer votre séjour. Laissez-vous séduire par l'élégance de nos installations
-              et le dévouement de notre équipe.
+              Notre établissement 3 étoiles allie le charme de l'accueil traditionnel algérien
+              aux standards modernes de confort : Wi-Fi haut débit gratuit, parking privé sécurisé,
+              restaurant ouvert en continu et service de réception disponible 24h/24.
             </RevealText>
           </div>
 

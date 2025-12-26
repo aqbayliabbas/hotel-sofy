@@ -18,10 +18,9 @@ export function Footer() {
           }}
         />
         <div className="relative z-10 text-center px-6 md:px-12">
-          <RevealTitle className="text-4xl md:text-5xl lg:text-7xl font-serif mb-6">Contactez-nous</RevealTitle>
+          <RevealTitle className="text-4xl md:text-5xl lg:text-7xl font-serif mb-6">Réservez Votre Séjour</RevealTitle>
           <RevealText className="text-xs md:text-sm uppercase tracking-[0.2em] mb-8 max-w-2xl mx-auto leading-relaxed">
-            Un séjour paisible et confortable vous attend à Bouira — notre équipe dévouée est là pour rendre votre expérience
-            exceptionnelle.
+            Appelez-nous au 026 73 51 28 ou 0558 54 43 63 — Notre équipe est disponible 24h/24 pour vous accueillir.
           </RevealText>
           <Link href="/contact">
             <Button

@@ -30,12 +30,12 @@ export default function Home() {
       {/* Gallery Section */}
       <section className="py-16 md:py-24 bg-background overflow-hidden">
         <div className="text-center mb-16 px-6">
-          <RevealText className="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">Galerie Photo</RevealText>
+          <RevealText className="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">Découvrez</RevealText>
           <RevealTitle className="text-4xl md:text-5xl font-serif leading-tight">
-            Moments Hotel Sofy
+            L'Hôtel Sofy
           </RevealTitle>
           <RevealTitle className="text-4xl md:text-5xl font-serif leading-tight" delay={0.2}>
-            Capturés
+            En Images
           </RevealTitle>
         </div>
         <div className="relative flex">

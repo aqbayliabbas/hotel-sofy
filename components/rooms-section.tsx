@@ -72,13 +72,13 @@ export function RoomsSection() {
       <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
         <div className="max-w-xl">
           <RevealText className="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">
-            Chambres & Suites
+            Nos Hébergements
           </RevealText>
           <RevealTitle className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight">
-            Séjournez à votre façon
+            Chambres Climatisées & Équipées
           </RevealTitle>
           <RevealText className="mt-6 text-base opacity-80 leading-relaxed" delay={0.3}>
-            Des chambres confortables aux suites spacieuses, chaque espace à l'Hôtel Sofy est conçu avec soin pour votre confort et votre tranquillité.
+            Profitez de chambres modernes avec TV, salle de bain privée, balcon vue ville et ménage quotidien. Chambres non-fumeurs disponibles sur demande.
           </RevealText>
         </div>
         <Link href="/rooms">

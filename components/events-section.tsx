@@ -44,13 +44,13 @@ export function EventsSection() {
         <section className="bg-background">
             <div className="text-center py-16 md:py-24 px-6 md:px-12 max-w-7xl mx-auto">
                 <RevealText className="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">
-                    Événements Spéciaux
+                    Espaces Événementiels
                 </RevealText>
                 <RevealTitle className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight mb-6">
-                    Célébrez à l'Hôtel Sofy
+                    Vos Événements à l'Hôtel Sofy
                 </RevealTitle>
                 <RevealText className="text-base opacity-80 leading-relaxed max-w-2xl mx-auto mb-10" delay={0.3}>
-                    Des espaces polyvalents et un service impeccable pour faire de chaque occasion un succès retentissant.
+                    Salles modulables pour mariages, séminaires, conférences et célébrations. Service traiteur sur mesure et équipements audiovisuels modernes.
                 </RevealText>
                 <Link href="/contact">
                     <Button

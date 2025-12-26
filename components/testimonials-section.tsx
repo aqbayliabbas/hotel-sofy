@@ -73,7 +73,7 @@ export function TestimonialsSection() {
     return (
         <section className="py-16 md:py-24 px-6 md:px-12 bg-secondary/10 flex flex-col items-center text-center">
             <RevealTitle className="text-4xl md:text-5xl lg:text-6xl font-serif mb-10 max-w-3xl leading-tight">
-                Avis de nos clients
+                Ce Que Nos Clients Disent
             </RevealTitle>
 
             <div className="flex gap-1 mb-8">

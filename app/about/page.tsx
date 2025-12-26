@@ -36,26 +36,26 @@ export default function AboutPage() {
                     <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                         <div className="space-y-8">
                             <RevealText className="text-xs uppercase tracking-[0.3em] text-primary block">
-                                À Propos de Nous
+                                Notre Histoire
                             </RevealText>
                             <div className="text-4xl md:text-5xl font-serif leading-tight">
                                 <RevealTitle className="inline-block mr-4">
-                                    Plus qu'un Hôtel,
+                                    Votre Refuge
                                 </RevealTitle>
                                 <br />
                                 <RevealTitle className="inline-block italic text-primary/80" delay={0.2}>
-                                    Une Destination
+                                    au Cœur de Bouira
                                 </RevealTitle>
                             </div>
                             <div className="space-y-6 text-lg opacity-80 leading-relaxed font-light">
                                 <RevealText delay={0.2}>
-                                    Situé au cœur de Bouira, l'Hôtel Sofy incarne l'alliance parfaite entre l'hospitalité traditionnelle algérienne et le confort moderne d'un établissement 3 étoiles.
+                                    Situé Rue Frères Boussendalah, face au Centre Universitaire, l'Hôtel Sofy est un établissement 3 étoiles pensé pour les voyageurs d'affaires et les familles en quête de confort.
                                 </RevealText>
                                 <RevealText delay={0.4}>
-                                    Depuis notre ouverture, nous nous efforçons d'offrir à nos voyageurs d'affaires et de loisirs un havre de paix où chaque détail est soigneusement pensé pour leur satisfaction.
+                                    Nos chambres climatisées avec TV, salle de bain privée et balcon vue ville offrent un espace de repos idéal. Le ménage quotidien et les chambres non-fumeurs sur demande assurent un séjour impeccable.
                                 </RevealText>
                                 <RevealText delay={0.6}>
-                                    Notre équipe dévouée travaille sans relâche pour maintenir les plus hauts standards de propreté et de service, faisant de chaque séjour une expérience mémorable.
+                                    Avec un restaurant ouvert en continu, un parking privé sécurisé gratuit, le Wi-Fi dans tout l'établissement et une réception 24h/24, nous sommes là pour répondre à tous vos besoins.
                                 </RevealText>
                             </div>
                         </div>
@@ -87,10 +87,10 @@ export default function AboutPage() {
 
                         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
                             {[
-                                { icon: <ShieldCheck size={32} weight="thin" />, title: "Qualité", desc: "Un engagement sans faille vers l'excellence dans tous nos services." },
-                                { icon: <Heart size={32} weight="thin" />, title: "Hospitalité", desc: "L'art de recevoir avec chaleur et authenticité algérienne." },
-                                { icon: <Users size={32} weight="thin" />, title: "Service", desc: "Une équipe attentive à vos moindres besoins, 24h sur 24." },
-                                { icon: <Leaf size={32} weight="thin" />, title: "Confort", desc: "Des espaces pensés pour votre repos et votre sérénité." }
+                                { icon: <ShieldCheck size={32} weight="thin" />, title: "Propreté", desc: "Ménage quotidien, détecteurs de fumée, extincteurs et kit de premiers secours." },
+                                { icon: <Heart size={32} weight="thin" />, title: "Accueil", desc: "Réception 24h/24 et animaux de compagnie acceptés pour votre confort." },
+                                { icon: <Users size={32} weight="thin" />, title: "Commodités", desc: "Wi-Fi gratuit, parking privé sécurisé et restaurant ouvert en continu." },
+                                { icon: <Leaf size={32} weight="thin" />, title: "Confort", desc: "Chambres climatisées avec TV, balcon vue ville et salle de bain privée." }
                             ].map((value, idx) => (
                                 <motion.div
                                     key={idx}

@@ -50,13 +50,13 @@ export function ServicesSection() {
                 <div className="flex flex-col md:flex-row justify-between items-end mb-16 gap-8">
                     <div className="max-w-xl">
                         <RevealText className="text-xs uppercase tracking-[0.3em] text-primary mb-4 block">
-                            Services et Équipements
+                            Services Inclus
                         </RevealText>
                         <RevealTitle className="text-4xl md:text-5xl lg:text-6xl font-serif leading-tight">
-                            Vivez le Paradis
+                            Tout pour Votre Confort
                         </RevealTitle>
                         <RevealText className="mt-6 text-base opacity-80 leading-relaxed" delay={0.3}>
-                            Profitez d'un hébergement de qualité avec nos installations modernes, incluant restaurant et terrasse, conçues pour rendre votre séjour aussi agréable que pratique.
+                            Réception 24h/24, Wi-Fi gratuit dans tout l'établissement, parking privé sécurisé et restaurant avec terrasse. Animaux de compagnie acceptés.
                         </RevealText>
                     </div>
                     <Button

@@ -74,8 +74,9 @@ export default function ContactPage() {
                                     <div>
                                         <h3 className="text-lg font-semibold mb-2">Adresse</h3>
                                         <p className="text-sm opacity-70 leading-relaxed">
-                                            Rue des Frères Boussendalah<br />
-                                            Bouira, Algérie
+                                            Rue Frères Boussendalah<br />
+                                            Face au Centre Universitaire<br />
+                                            10101 Bouira, Algérie
                                         </p>
                                     </div>
                                 </div>
@@ -89,8 +90,9 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold mb-2">Téléphone</h3>
-                                        <p className="text-sm opacity-70">+213 (0) 26 XX XX XX</p>
-                                        <p className="text-xs opacity-50 mt-1">Disponible 24h/24, 7j/7</p>
+                                        <p className="text-sm opacity-70">026 73 51 28 / 026 73 51 29</p>
+                                        <p className="text-sm opacity-70">0558 54 43 63 (Mobile)</p>
+                                        <p className="text-xs opacity-50 mt-1">Réception disponible 24h/24</p>
                                     </div>
                                 </div>
 
@@ -103,8 +105,7 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <h3 className="text-lg font-semibold mb-2">Email</h3>
-                                        <p className="text-sm opacity-70">contact@hotelsofy.dz</p>
-                                        <p className="text-sm opacity-70">reservation@hotelsofy.dz</p>
+                                        <p className="text-sm opacity-70">contact@hotelsofy.com</p>
                                     </div>
                                 </div>
                             </div>

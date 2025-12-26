@@ -121,7 +121,7 @@ export function Navbar({
         </div>
         <div className="flex items-center gap-1.5 mr-4">
           <Phone size={16} weight="thin" />
-          <span>+1 234 567 890</span>
+          <span>026 73 51 28</span>
         </div>
         <AuthModal>
           <button className="text-[10px] border border-current px-4 py-2 hover:bg-current hover:text-background transition-colors">

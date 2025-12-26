@@ -51,7 +51,7 @@ export default function RoomsPage() {
                         </div>
                         <div>
                             <RevealTitle className="text-xl font-serif mb-4 italic">Besoin d'aide ?</RevealTitle>
-                            <RevealText className="opacity-70">+213 (0) 26 XX XX XX</RevealText>
+                            <RevealText className="opacity-70">026 73 51 28 / 0558 54 43 63</RevealText>
                         </div>
                     </div>
                 </section>
