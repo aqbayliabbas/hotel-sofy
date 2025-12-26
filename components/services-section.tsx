@@ -95,7 +95,7 @@ export function ServicesSection() {
                         </AnimatePresence>
                     </div>
 
-                    <div className="space-y-8 relative overflow-hidden min-h-[250px] lg:h-[300px] flex flex-col justify-center">
+                    <div className="space-y-8 relative overflow-hidden min-h-[250px] lg:h-[300px] flex flex-col justify-center lg:justify-end">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={activeIndex}
@@ -103,7 +103,7 @@ export function ServicesSection() {
                                 animate={{ y: 0, opacity: 1 }}
                                 exit={{ y: -20, opacity: 0 }}
                                 transition={{ duration: 0.4 }}
-                                className="lg:absolute w-full"
+                                className="lg:absolute w-full lg:top-0 lg:left-0"
                                 drag="x"
                                 dragConstraints={{ left: 0, right: 0 }}
                                 dragElastic={0.2}
