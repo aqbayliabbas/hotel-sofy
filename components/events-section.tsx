@@ -78,19 +78,19 @@ function EventCard({ event, index }: { event: typeof events[0], index: number })
     // User asked for "archive paper" effect which usually implies simple stacking.
 
     return (
-        <div className="sticky top-0 h-screen w-full bg-background flex items-center justify-center border-t border-border/10 overflow-hidden">
+        <div className="sticky top-0 min-h-screen w-full bg-background flex items-center justify-center border-t border-border/10 overflow-hidden">
             <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2">
                 {/* Left Image */}
-                <div className="relative h-[50vh] lg:h-full w-full overflow-hidden">
+                <div className="relative h-[40vh] lg:h-full w-full overflow-hidden">
                     <img src={event.image} alt={event.title} className="w-full h-full object-cover" />
                 </div>
                 {/* Right Content */}
-                <div className="bg-[#f8f9fa] flex items-center justify-center p-8 md:p-12 lg:p-24 h-[50vh] lg:h-full">
-                    <div className="max-w-md text-center flex flex-col items-center">
+                <div className="bg-[#f8f9fa] flex items-center justify-center p-6 md:p-12 lg:p-24 h-auto min-h-[60vh] lg:h-full">
+                    <div className="max-w-md text-center flex flex-col items-center py-8">
                         <RevealText className="text-xs uppercase tracking-[0.2em] text-primary/60 mb-4 font-sans">{event.subtitle}</RevealText>
-                        <RevealTitle className="text-3xl md:text-5xl font-serif mb-12 text-primary leading-tight">{event.title}</RevealTitle>
+                        <RevealTitle className="text-3xl md:text-5xl font-serif mb-8 md:mb-12 text-primary leading-tight">{event.title}</RevealTitle>
 
-                        <div className="aspect-square w-64 mb-12 overflow-hidden shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-700 ease-out border-4 border-white">
+                        <div className="aspect-square w-48 md:w-64 mb-8 md:mb-12 overflow-hidden shadow-xl -rotate-2 hover:rotate-0 transition-transform duration-700 ease-out border-4 border-white">
                             <img
                                 src={event.inset}
                                 alt={event.subtitle}

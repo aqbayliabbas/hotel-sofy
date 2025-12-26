@@ -56,23 +56,23 @@ export function Navbar({
       </div>
 
       {/* Mobile Menu Trigger */}
-      <div className="lg:hidden flex-1">
+      <div className="lg:hidden flex-1 flex items-center">
         <Sheet>
           <SheetTrigger asChild>
             <Button
               variant="ghost"
               size="icon"
-              className={`h-20 w-20 ${showWhiteBg
-                ? 'text-primary hover:bg-primary/10'
-                : 'text-white hover:bg-white/20'
+              className={`h-12 w-12 ${showWhiteBg
+                ? 'text-primary hover:bg-primary/5'
+                : 'text-white hover:bg-white/10'
                 }`}
             >
-              <List size={64} weight="thin" />
+              <List size={40} weight="thin" />
             </Button>
           </SheetTrigger>
-          <SheetContent side="left" className="bg-background w-[300px] sm:w-[400px]">
-            <nav className="flex flex-col gap-6 mt-12 px-4">
-              <div className="flex flex-col items-center mb-8">
+          <SheetContent side="left" className="bg-background w-full sm:w-[400px] border-r-0">
+            <nav className="flex flex-col gap-8 mt-16 px-6">
+              <div className="mb-12">
                 <img
                   src="/assets/branding/SVG/hotel sofy logo main.svg"
                   alt="Hotel Sofy"
@@ -83,11 +83,21 @@ export function Navbar({
                 <Link
                   key={link.href}
                   href={link.href}
-                  className="text-xl text-foreground hover:text-primary transition-colors uppercase tracking-widest block w-fit"
+                  className="text-2xl text-foreground hover:text-primary transition-colors uppercase tracking-[0.2em] font-serif block w-fit"
                 >
-                  <FlipText className="flex">{link.label}</FlipText>
+                  {link.label}
                 </Link>
               ))}
+              <div className="mt-8 pt-8 border-t border-border/50 space-y-4">
+                <div className="flex items-center gap-3 text-sm opacity-60">
+                  <Phone size={18} weight="thin" />
+                  <span>026 73 51 28</span>
+                </div>
+                <div className="flex items-center gap-3 text-sm opacity-60">
+                  <MapPin size={18} weight="thin" />
+                  <span>Bouira, Algérie</span>
+                </div>
+              </div>
             </nav>
           </SheetContent>
         </Sheet>
@@ -99,9 +109,9 @@ export function Navbar({
           <img
             src="/assets/branding/SVG/hotel sofy logo main.svg"
             alt="Hotel Sofy"
-            className={`w-auto object-contain transition-all duration-300 ${isNavbarCompressed
-              ? 'h-14 md:h-16'
-              : 'h-16 md:h-24'
+            className={`w-auto object-contain transition-all duration-300 ${isScrolled
+              ? 'h-10 md:h-14'
+              : 'h-14 md:h-20'
               } ${showWhiteBg
                 ? ''
                 : 'brightness-0 invert'
@@ -130,15 +140,15 @@ export function Navbar({
         </AuthModal>
       </div>
 
-      {/* Mobile Right (Placeholder to balance layout if needed, or just Contact icon) */}
+      {/* Mobile Right */}
       <div className="lg:hidden flex-1 flex justify-end items-center gap-4">
         <AuthModal>
-          <button className="hover:opacity-70 p-1">
-            <User size={24} weight="thin" />
+          <button className="hover:opacity-70 p-2">
+            <User size={26} weight="thin" />
           </button>
         </AuthModal>
-        <Link href="/contact" className="hover:opacity-70">
-          <Phone size={24} weight="thin" />
+        <Link href="/contact" className="hover:opacity-70 p-2">
+          <Phone size={26} weight="thin" />
         </Link>
       </div>
     </nav>

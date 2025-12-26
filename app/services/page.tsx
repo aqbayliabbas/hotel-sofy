@@ -33,7 +33,7 @@ export default function ServicesPage() {
                         <RevealText className="text-xs uppercase tracking-[0.4em] mb-4 opacity-80">
                             Notre Engagement
                         </RevealText>
-                        <RevealTitle className="text-5xl md:text-7xl font-serif mb-6">
+                        <RevealTitle className="text-4xl md:text-7xl font-serif mb-6 leading-tight">
                             Services & Équipements
                         </RevealTitle>
                         <RevealText className="max-w-2xl mx-auto opacity-70 text-lg font-light" delay={0.4}>

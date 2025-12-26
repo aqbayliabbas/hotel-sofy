@@ -40,7 +40,7 @@ const ParallaxImage = ({
         x,
         filter
       }}
-      className={`absolute hidden xl:block shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden rounded-sm z-0 ${className}`}
+      className={`absolute hidden lg:block shadow-[0_20px_50px_rgba(0,0,0,0.5)] overflow-hidden rounded-sm z-0 ${className}`}
     >
       <motion.img
         style={{ scale }}
@@ -60,8 +60,8 @@ export function WelcomeSection() {
   })
 
   return (
-    <section ref={containerRef} className="relative h-auto xl:h-[600vh] bg-background">
-      <div className="relative xl:sticky xl:top-0 h-auto xl:h-screen w-full overflow-hidden flex items-center justify-center py-24 xl:py-0">
+    <section ref={containerRef} className="relative h-auto lg:h-[600vh] bg-background">
+      <div className="relative lg:sticky lg:top-0 h-auto lg:h-screen w-full overflow-hidden flex items-center justify-center py-20 lg:py-0">
         {/* Decorative Background Elements */}
 
         <div className="max-w-6xl mx-auto flex flex-col items-center text-center relative z-20 px-6 md:px-12">
@@ -69,12 +69,12 @@ export function WelcomeSection() {
             initial={{ opacity: 0, y: 20 }}
             whileInView={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.8 }}
-            className="mb-8"
+            className="mb-6 md:mb-8"
           >
             <img
               src="/assets/branding/SVG/favicon.svg"
               alt="Hotel Sofy Icon"
-              className="h-12 w-12 mx-auto"
+              className="h-10 w-10 md:h-12 md:w-12 mx-auto"
             />
           </motion.div>
 
@@ -82,11 +82,11 @@ export function WelcomeSection() {
             Bienvenue à l'Hôtel Sofy
           </RevealText>
 
-          <div className="text-4xl md:text-5xl lg:text-7xl font-serif mb-12 leading-tight max-w-4xl tracking-tight">
+          <div className="text-3xl md:text-5xl lg:text-7xl font-serif mb-8 md:mb-12 leading-[1.2] lg:leading-tight max-w-4xl tracking-tight">
             <RevealTitle className="inline-block" delay={0.1}>
               L'Hospitalité
             </RevealTitle>
-            <br />
+            <br className="md:hidden" />
             <RevealTitle className="inline-block italic text-primary/80 mr-4" delay={0.2}>
               Algérienne
             </RevealTitle>
@@ -95,7 +95,7 @@ export function WelcomeSection() {
             </RevealTitle>
           </div>
 
-          <div className="max-w-2xl space-y-8 text-base md:text-xl leading-relaxed font-light opacity-90">
+          <div className="max-w-2xl space-y-6 md:space-y-8 text-sm md:text-xl leading-relaxed font-light opacity-90">
             <RevealText delay={0.4}>
               Idéalement situé Rue Frères Boussendalah, face au Centre Universitaire de Bouira,
               l'Hôtel Sofy est votre destination privilégiée pour des séjours d'affaires productifs
@@ -170,10 +170,6 @@ export function WelcomeSection() {
         />
       </div>
 
-      <div className="absolute bottom-12 left-1/2 -translate-x-1/2 opacity-30 flex flex-col items-center gap-4">
-        <span className="text-[10px] uppercase tracking-[0.4em] rotate-90 mb-8">Découvrir</span>
-        <div className="w-px h-24 bg-foreground/50" />
-      </div>
     </section>
   )
 }

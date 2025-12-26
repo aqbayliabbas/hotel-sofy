@@ -44,7 +44,7 @@ export default function ContactPage() {
                         }}
                     />
                     <div className="relative z-10 text-center px-6">
-                        <RevealTitle className="text-5xl md:text-6xl lg:text-7xl font-serif mb-4">Contactez-nous</RevealTitle>
+                        <RevealTitle className="text-4xl md:text-6xl lg:text-7xl font-serif mb-4 leading-tight">Contactez-nous</RevealTitle>
                         <RevealText className="text-sm md:text-base uppercase tracking-[0.3em] opacity-80" delay={0.4}>
                             Nous sommes à votre écoute
                         </RevealText>

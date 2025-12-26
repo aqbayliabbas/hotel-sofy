@@ -25,7 +25,7 @@ export default function AboutPage() {
                         <RevealText className="text-xs uppercase tracking-[0.4em] mb-4 opacity-80">
                             Notre Histoire
                         </RevealText>
-                        <RevealTitle className="text-5xl md:text-7xl font-serif mb-6">
+                        <RevealTitle className="text-4xl md:text-7xl font-serif mb-6 leading-tight">
                             L'Élégance & La Tradition
                         </RevealTitle>
                     </div>
@@ -38,7 +38,7 @@ export default function AboutPage() {
                             <RevealText className="text-xs uppercase tracking-[0.3em] text-primary block">
                                 Notre Histoire
                             </RevealText>
-                            <div className="text-4xl md:text-5xl font-serif leading-tight">
+                            <div className="text-3xl md:text-5xl font-serif leading-tight">
                                 <RevealTitle className="inline-block mr-4">
                                     Votre Refuge
                                 </RevealTitle>

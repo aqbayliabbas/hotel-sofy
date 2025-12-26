@@ -83,7 +83,7 @@ export function ServicesSection() {
                         </AnimatePresence>
                     </div>
 
-                    <div className="space-y-8 relative overflow-hidden h-[300px] flex flex-col justify-center">
+                    <div className="space-y-8 relative overflow-hidden min-h-[250px] lg:h-[300px] flex flex-col justify-center">
                         <AnimatePresence mode="wait">
                             <motion.div
                                 key={activeIndex}
@@ -91,7 +91,7 @@ export function ServicesSection() {
                                 animate={{ y: 0, opacity: 1 }}
                                 exit={{ y: -20, opacity: 0 }}
                                 transition={{ duration: 0.4 }}
-                                className="absolute w-full"
+                                className="lg:absolute w-full"
                             >
                                 <div className="w-10 h-10 border border-primary/20 flex items-center justify-center rounded-full opacity-60 mb-8">
                                     {services[activeIndex].icon}
@@ -103,7 +103,7 @@ export function ServicesSection() {
                             </motion.div>
                         </AnimatePresence>
 
-                        <div className="flex gap-4 pt-40 z-10 mt-auto">
+                        <div className="flex gap-4 pt-8 z-10">
                             <Button
                                 size="icon"
                                 variant="outline"

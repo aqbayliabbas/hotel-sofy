@@ -18,7 +18,7 @@ export function Footer() {
           }}
         />
         <div className="relative z-10 text-center px-6 md:px-12">
-          <RevealTitle className="text-4xl md:text-5xl lg:text-7xl font-serif mb-6">Réservez Votre Séjour</RevealTitle>
+          <RevealTitle className="text-3xl md:text-5xl lg:text-7xl font-serif mb-6">Réservez Votre Séjour</RevealTitle>
           <RevealText className="text-xs md:text-sm uppercase tracking-[0.2em] mb-8 max-w-2xl mx-auto leading-relaxed">
             Appelez-nous au 026 73 51 28 ou 0558 54 43 63 — Notre équipe est disponible 24h/24 pour vous accueillir.
           </RevealText>
@@ -34,7 +34,7 @@ export function Footer() {
       </div>
 
       <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12 mb-20">
-        <div className="flex flex-col items-center lg:items-start">
+        <div className="flex flex-col items-center lg:items-start text-center lg:text-left">
           <div className="flex flex-col items-center lg:items-start mb-8">
             <img
               src="/assets/branding/SVG/footer logo.svg"
@@ -42,77 +42,79 @@ export function Footer() {
               className="h-16 w-auto object-contain"
             />
           </div>
-          <div className="flex gap-4 opacity-70">
-            <FacebookLogo size={18} weight="thin" />
-            <InstagramLogo size={18} weight="thin" />
-            <YoutubeLogo size={18} weight="thin" />
-            <TwitterLogo size={18} weight="thin" />
+          <p className="text-sm opacity-60 mb-8 max-w-[240px]">L'élégance et le confort au cœur de Bouira.</p>
+          <div className="flex gap-6 opacity-70">
+            <FacebookLogo size={20} weight="thin" className="hover:text-primary transition-colors cursor-pointer" />
+            <InstagramLogo size={20} weight="thin" className="hover:text-primary transition-colors cursor-pointer" />
+            <YoutubeLogo size={20} weight="thin" className="hover:text-primary transition-colors cursor-pointer" />
+            <TwitterLogo size={20} weight="thin" className="hover:text-primary transition-colors cursor-pointer" />
           </div>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h4 className="text-[10px] uppercase tracking-widest mb-6 font-semibold opacity-50">Navigation</h4>
-          <ul className="space-y-3 text-sm tracking-wide">
+          <ul className="space-y-4 text-sm tracking-wide">
             <li>
-              <a href="#" className="block w-fit">
+              <Link href="/" className="block w-fit mx-auto md:mx-0">
                 <FlipText>Accueil</FlipText>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block w-fit">
+              <Link href="/rooms" className="block w-fit mx-auto md:mx-0">
                 <FlipText>Chambres</FlipText>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block w-fit">
+              <Link href="/services" className="block w-fit mx-auto md:mx-0">
                 <FlipText>Services</FlipText>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block w-fit">
+              <Link href="/contact" className="block w-fit mx-auto md:mx-0">
                 <FlipText>Contact</FlipText>
-              </a>
+              </Link>
             </li>
           </ul>
         </div>
 
-        <div>
-          <h4 className="text-[10px] uppercase tracking-widest mb-6 font-semibold opacity-50">Pages</h4>
-          <ul className="space-y-3 text-sm tracking-wide">
+        <div className="text-center md:text-left">
+          <h4 className="text-[10px] uppercase tracking-widest mb-6 font-semibold opacity-50">Découvrir</h4>
+          <ul className="space-y-4 text-sm tracking-wide">
             <li>
-              <a href="#" className="block w-fit">
+              <Link href="/about" className="block w-fit mx-auto md:mx-0">
                 <FlipText>À propos</FlipText>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block w-fit">
+              <Link href="/events" className="block w-fit mx-auto md:mx-0">
                 <FlipText>Événements</FlipText>
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block w-fit">
-                <FlipText>Blog / Actualités</FlipText>
-              </a>
+              <Link href="#" className="block w-fit mx-auto md:mx-0">
+                <FlipText>Actualités</FlipText>
+              </Link>
             </li>
             <li>
-              <a href="#" className="block w-fit">
-                <FlipText>Politique de Confidentialité</FlipText>
-              </a>
+              <Link href="#" className="block w-fit mx-auto md:mx-0">
+                <FlipText>Confidentialité</FlipText>
+              </Link>
             </li>
           </ul>
         </div>
 
-        <div>
+        <div className="text-center md:text-left">
           <h4 className="text-[10px] uppercase tracking-widest mb-6 font-semibold opacity-50">
-            S&apos;inscrire à la Newsletter
+            Newsletter
           </h4>
-          <div className="flex">
+          <p className="text-xs opacity-60 mb-6">Restez informé de nos offres exclusives.</p>
+          <div className="flex flex-col sm:flex-row gap-2 sm:gap-0">
             <Input
-              placeholder="Entrez votre email"
+              placeholder="Email"
               className="rounded-none border-primary/20 focus-visible:ring-primary/20 bg-transparent text-sm h-12"
             />
             <Button className="rounded-none bg-primary text-white h-12 px-6 uppercase text-[10px] tracking-widest">
-              S&apos;abonner
+              Ok
             </Button>
           </div>
         </div>

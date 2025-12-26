@@ -28,16 +28,16 @@ export function Hero() {
 
       <div className="relative z-10 text-center text-white px-6 md:px-12">
         <RevealTitle
-          className="text-5xl md:text-6xl lg:text-8xl font-serif mb-6 leading-tight max-w-4xl mx-auto"
+          className="text-4xl md:text-6xl lg:text-8xl font-serif mb-6 leading-[1.1] max-w-5xl mx-auto tracking-tight"
           delay={4.5}
         >
           Votre Escale de Confort à Bouira
         </RevealTitle>
         <RevealText
-          className="text-base md:text-lg tracking-widest uppercase mb-10 opacity-90"
+          className="text-sm md:text-lg tracking-[0.2em] md:tracking-[0.4em] uppercase mb-10 opacity-80 max-w-3xl mx-auto"
           delay={4.8}
         >
-          Hôtel 3 étoiles — Rue Frères Boussendalah, face au Centre Universitaire
+          Hôtel 3 étoiles — Rue Frères Boussendalah
         </RevealText>
         <motion.div
           initial={{ opacity: 0, y: 20 }}

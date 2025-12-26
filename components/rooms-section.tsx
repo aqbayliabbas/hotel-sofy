@@ -189,7 +189,7 @@ export function RoomsSection() {
       </div>
 
       {/* Mobile Slider Layout */}
-      <div className="lg:hidden relative h-[500px] w-full overflow-hidden">
+      <div className="lg:hidden relative h-[70vh] min-h-[500px] w-full overflow-hidden">
         <AnimatePresence mode="wait">
           <motion.div
             key={activeRoomIdx ?? 0}
@@ -210,7 +210,7 @@ export function RoomsSection() {
         </AnimatePresence>
 
         {/* Content Overlay */}
-        <div className="absolute bottom-0 left-0 w-full p-6 md:p-12 text-white">
+        <div className="absolute bottom-0 left-0 w-full p-6 text-white">
           <motion.div
             key={activeRoomIdx ?? 0}
             initial={{ y: 20, opacity: 0 }}
