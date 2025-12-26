@@ -40,6 +40,7 @@ export function Footer() {
               src="/assets/branding/SVG/footer logo.svg"
               alt="Hotel Sofy"
               className="h-16 w-auto object-contain"
+              loading="lazy"
             />
           </div>
           <p className="text-sm opacity-60 mb-8 max-w-[240px]">L'élégance et le confort au cœur de Bouira.</p>

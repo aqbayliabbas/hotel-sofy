@@ -15,8 +15,9 @@ const playfair = Playfair_Display({
 })
 
 export const metadata: Metadata = {
-  title: "Hôtel Sofy | Hébergement Confortable à Bouira",
-  description: "Un établissement 3 étoiles à Bouira offrant confort moderne et hospitalité exceptionnelle.",
+  title: "Hôtel Sofy | Hôtel à Bouira - Hébergement & Hospitalité en Algérie",
+  description: "Découvrez l'Hôtel Sofy, votre hôtel de référence à Bouira. Hébergement local de qualité, chambres confortables, proche de Tikjda. Le meilleur de l'hôtellerie en Algérie.",
+  keywords: "hotel, hotels, hotel bouira, bouira, tikedjda hotel, algerie hotel, hotel alger, hotelerie, hébergement bouira, hébérgement local",
   generator: "v0.app",
   icons: {
     icon: [

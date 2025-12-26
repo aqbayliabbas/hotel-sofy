@@ -86,16 +86,27 @@ export function TestimonialsSection() {
                 <AnimatePresence mode="wait">
                     <motion.div
                         key={activeIndex}
-                        initial={{ opacity: 0, y: 20 }}
-                        animate={{ opacity: 1, y: 0 }}
-                        exit={{ opacity: 0, y: -20 }}
-                        transition={{ duration: 0.4 }}
-                        className="absolute w-full"
+                        initial={{ opacity: 0, x: 50 }}
+                        animate={{ opacity: 1, x: 0 }}
+                        exit={{ opacity: 0, x: -50 }}
+                        transition={{ duration: 0.5 }}
+                        drag="x"
+                        dragConstraints={{ left: 0, right: 0 }}
+                        dragElastic={0.2}
+                        onDragEnd={(_, info) => {
+                            const swipeThreshold = 50
+                            if (info.offset.x > swipeThreshold) {
+                                prevTestimonial()
+                            } else if (info.offset.x < -swipeThreshold) {
+                                nextTestimonial()
+                            }
+                        }}
+                        className="absolute w-full cursor-grab active:cursor-grabbing"
                     >
-                        <RevealText key={`quote-${activeIndex}`} className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed opacity-80 mb-8 italic">
+                        <RevealText key={`quote-${activeIndex}`} className="max-w-2xl mx-auto text-base md:text-lg leading-relaxed opacity-80 mb-8 italic select-none">
                             {`"${testimonials[activeIndex].quote}"`}
                         </RevealText>
-                        <RevealText key={`author-${activeIndex}`} className="text-xs uppercase tracking-[0.3em] font-medium">
+                        <RevealText key={`author-${activeIndex}`} className="text-xs uppercase tracking-[0.3em] font-medium select-none">
                             {`${testimonials[activeIndex].author}, ${testimonials[activeIndex].location}`}
                         </RevealText>
                     </motion.div>

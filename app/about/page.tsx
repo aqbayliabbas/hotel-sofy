@@ -70,6 +70,7 @@ export default function AboutPage() {
                                     src="/assets/reception.png"
                                     alt="Hotel Sofy Interior"
                                     className="w-full h-full object-cover"
+                                    loading="lazy"
                                 />
                             </motion.div>
                             <div className="absolute -bottom-10 -left-10 w-48 h-48 bg-primary/10 -z-10" />

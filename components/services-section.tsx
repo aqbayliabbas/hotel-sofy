@@ -68,17 +68,29 @@ export function ServicesSection() {
                 </div>
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
-                    <div className="relative aspect-video overflow-hidden">
+                    <div className="relative aspect-video overflow-hidden group cursor-grab active:cursor-grabbing">
                         <AnimatePresence mode="wait">
                             <motion.img
                                 key={activeIndex}
-                                initial={{ opacity: 0, scale: 1.05 }}
-                                animate={{ opacity: 1, scale: 1 }}
-                                exit={{ opacity: 0 }}
+                                initial={{ opacity: 0, x: 50 }}
+                                animate={{ opacity: 1, x: 0 }}
+                                exit={{ opacity: 0, x: -50 }}
                                 transition={{ duration: 0.5 }}
+                                drag="x"
+                                dragConstraints={{ left: 0, right: 0 }}
+                                dragElastic={0.2}
+                                onDragEnd={(_, info) => {
+                                    const swipeThreshold = 50
+                                    if (info.offset.x > swipeThreshold) {
+                                        prevService()
+                                    } else if (info.offset.x < -swipeThreshold) {
+                                        nextService()
+                                    }
+                                }}
                                 src={services[activeIndex].image}
                                 alt={services[activeIndex].title}
-                                className="w-full h-full object-cover"
+                                className="w-full h-full object-cover pointer-events-none"
+                                loading="lazy"
                             />
                         </AnimatePresence>
                     </div>
@@ -92,6 +104,17 @@ export function ServicesSection() {
                                 exit={{ y: -20, opacity: 0 }}
                                 transition={{ duration: 0.4 }}
                                 className="lg:absolute w-full"
+                                drag="x"
+                                dragConstraints={{ left: 0, right: 0 }}
+                                dragElastic={0.2}
+                                onDragEnd={(_, info) => {
+                                    const swipeThreshold = 50
+                                    if (info.offset.x > swipeThreshold) {
+                                        prevService()
+                                    } else if (info.offset.x < -swipeThreshold) {
+                                        nextService()
+                                    }
+                                }}
                             >
                                 <div className="w-10 h-10 border border-primary/20 flex items-center justify-center rounded-full opacity-60 mb-8">
                                     {services[activeIndex].icon}

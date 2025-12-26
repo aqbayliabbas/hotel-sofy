@@ -82,7 +82,7 @@ function EventCard({ event, index }: { event: typeof events[0], index: number })
             <div className="w-full h-full grid grid-cols-1 lg:grid-cols-2">
                 {/* Left Image */}
                 <div className="relative h-[40vh] lg:h-full w-full overflow-hidden">
-                    <img src={event.image} alt={event.title} className="w-full h-full object-cover" />
+                    <img src={event.image} alt={event.title} className="w-full h-full object-cover" loading="lazy" />
                 </div>
                 {/* Right Content */}
                 <div className="bg-[#f8f9fa] flex items-center justify-center p-6 md:p-12 lg:p-24 h-auto min-h-[60vh] lg:h-full">
@@ -95,6 +95,7 @@ function EventCard({ event, index }: { event: typeof events[0], index: number })
                                 src={event.inset}
                                 alt={event.subtitle}
                                 className="w-full h-full object-cover"
+                                loading="lazy"
                             />
                         </div>
 

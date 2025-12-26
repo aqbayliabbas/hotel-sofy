@@ -169,6 +169,7 @@ export function RoomsSection() {
                 src={rooms[activeRoomIdx].image}
                 alt={rooms[activeRoomIdx].name}
                 className="w-full h-full object-cover"
+                loading="lazy"
               />
             )}
           </AnimatePresence>
@@ -193,19 +194,31 @@ export function RoomsSection() {
         <AnimatePresence mode="wait">
           <motion.div
             key={activeRoomIdx ?? 0}
-            initial={{ opacity: 0 }}
-            animate={{ opacity: 1 }}
-            exit={{ opacity: 0 }}
+            initial={{ opacity: 0, x: 20 }}
+            animate={{ opacity: 1, x: 0 }}
+            exit={{ opacity: 0, x: -20 }}
             transition={{ duration: 0.5 }}
-            className="absolute inset-0"
+            drag="x"
+            dragConstraints={{ left: 0, right: 0 }}
+            dragElastic={0.2}
+            onDragEnd={(_, info) => {
+              const swipeThreshold = 50
+              if (info.offset.x > swipeThreshold) {
+                prevRoom()
+              } else if (info.offset.x < -swipeThreshold) {
+                nextRoom()
+              }
+            }}
+            className="absolute inset-0 cursor-grab active:cursor-grabbing"
           >
             <img
               src={rooms[activeRoomIdx ?? 0].image}
               alt={rooms[activeRoomIdx ?? 0].name}
-              className="w-full h-full object-cover"
+              className="w-full h-full object-cover pointer-events-none"
+              loading="lazy"
             />
             {/* Dark Gradient Overlay */}
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent" />
+            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/20 to-transparent pointer-events-none" />
           </motion.div>
         </AnimatePresence>
 

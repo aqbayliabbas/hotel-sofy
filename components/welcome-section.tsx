@@ -47,6 +47,7 @@ const ParallaxImage = ({
         src={src || "/placeholder.svg"}
         alt={alt}
         className="w-full h-full object-cover"
+        loading="lazy"
       />
     </motion.div>
   )
@@ -75,6 +76,7 @@ export function WelcomeSection() {
               src="/assets/branding/SVG/favicon.svg"
               alt="Hotel Sofy Icon"
               className="h-10 w-10 md:h-12 md:w-12 mx-auto"
+              loading="lazy"
             />
           </motion.div>
 

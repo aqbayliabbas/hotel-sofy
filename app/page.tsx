@@ -76,6 +76,7 @@ export default function Home() {
                   src={src || "/placeholder.svg"}
                   className="w-full h-full object-cover grayscale group-hover:grayscale-0 transition-all duration-700 ease-in-out group-hover:scale-110"
                   alt={`Image de galerie ${i + 1}`}
+                  loading="lazy"
                 />
               </div>
             ))}
