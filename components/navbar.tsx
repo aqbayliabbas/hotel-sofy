@@ -40,7 +40,7 @@ export function Navbar({
     <nav
       className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-12 uppercase text-base tracking-widest font-medium transition-all duration-300 ${showWhiteBg
         ? 'bg-white shadow-md py-6'
-        : 'bg-transparent py-12 md:py-16'
+        : 'bg-transparent py-8 lg:py-16'
         } ${showWhiteBg
           ? 'text-primary'
           : 'text-white'

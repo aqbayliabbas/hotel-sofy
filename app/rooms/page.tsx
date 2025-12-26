@@ -12,7 +12,7 @@ export default function RoomsPage() {
 
             <div className="pt-24 md:pt-32">
                 {/* Hero Section */}
-                <section className="relative h-[50vh] flex items-center justify-center overflow-hidden">
+                <section className="relative h-[40vh] md:h-[50vh] flex items-center justify-center overflow-hidden">
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{

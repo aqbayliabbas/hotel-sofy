@@ -15,7 +15,7 @@ export function Hero() {
   const y = useTransform(scrollYProgress, [0, 1], ["0%", "50%"])
 
   return (
-    <section ref={ref} className="relative h-screen w-full flex items-center justify-center overflow-hidden">
+    <section ref={ref} className="relative h-[70vh] md:h-screen w-full flex items-center justify-center overflow-hidden">
       <motion.div
         className="absolute inset-0 z-0 bg-cover bg-center"
         style={{
