@@ -18,7 +18,7 @@ export function RoomsSection() {
       beds: "1 Grand Lit (King)",
       guests: "2 Personnes",
       price: "15 000 DZD",
-      image: "/assets/chambres/chambre (1).png",
+      image: "/assets/chambres/chambre (1).webp",
       description: "Un havre de paix confortable pour votre séjour.",
     },
     {
@@ -27,7 +27,7 @@ export function RoomsSection() {
       beds: "1 Grand Lit (King)",
       guests: "2-3 Personnes",
       price: "22 000 DZD",
-      image: "/assets/chambres/chambre (2).png",
+      image: "/assets/chambres/chambre (2).webp",
       description: "Un espace spacieux et lumineux pour une détente absolue.",
     },
     {
@@ -36,7 +36,7 @@ export function RoomsSection() {
       beds: "1 Lit Queen",
       guests: "2 Personnes",
       price: "12 000 DZD",
-      image: "/assets/chambres/chambre (3).png",
+      image: "/assets/chambres/chambre (3).webp",
       description: "Un loft moderne conçu pour capturer l'heure dorée.",
     },
     {
@@ -45,7 +45,7 @@ export function RoomsSection() {
       beds: "2 Lits Queen",
       guests: "4-6 Personnes",
       price: "28 000 DZD",
-      image: "/assets/chambres/chambre (4).png",
+      image: "/assets/chambres/chambre (4).webp",
       description: "Luxe spacieux pour toute la famille.",
     },
     {
@@ -54,7 +54,7 @@ export function RoomsSection() {
       beds: "2 Lits King",
       guests: "4-5 Personnes",
       price: "45 000 DZD",
-      image: "/assets/chambres/chambre (5).png",
+      image: "/assets/chambres/chambre (5).webp",
       description: "Profitez d'une élégance élevée et d'un confort exceptionnel.",
     },
   ]

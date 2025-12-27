@@ -129,42 +129,42 @@ export function WelcomeSection() {
 
         {/* Parallax Floating Images - Sequential Reveal */}
         <ParallaxImage
-          src="/assets/wide_shot_façade.png"
+          src="/assets/wide_shot_façade.webp"
           alt="Luxe Hotel Interior"
           className="top-[5%] left-[2%] w-64 h-80 rotate-[-4deg]"
           progress={scrollYProgress}
           range={[0.05, 0.2]}
         />
         <ParallaxImage
-          src="/assets/reception.png"
+          src="/assets/reception.webp"
           alt="Hotel Reception"
           className="top-[15%] right-[2%] w-72 h-96 rotate-[3deg]"
           progress={scrollYProgress}
           range={[0.2, 0.35]}
         />
         <ParallaxImage
-          src="/assets/chambres/chambre (1).png"
+          src="/assets/chambres/chambre (1).webp"
           alt="Cozy Room"
           className="bottom-[10%] left-[4%] w-80 h-64 rotate-[2deg]"
           progress={scrollYProgress}
           range={[0.35, 0.5]}
         />
         <ParallaxImage
-          src="/assets/chambres/chambre (2).png"
+          src="/assets/chambres/chambre (2).webp"
           alt="Elegant Suite"
           className="bottom-[5%] right-[5%] w-72 h-96 rotate-[-2deg]"
           progress={scrollYProgress}
           range={[0.5, 0.65]}
         />
         <ParallaxImage
-          src="/assets/reception 02.png"
+          src="/assets/reception 02.webp"
           alt="Modern Lobby"
           className="top-[45%] left-[8%] w-56 h-72 rotate-[-6deg]"
           progress={scrollYProgress}
           range={[0.65, 0.8]}
         />
         <ParallaxImage
-          src="/assets/chambres/chambre (3).png"
+          src="/assets/chambres/chambre (3).webp"
           alt="Luxurious Bed"
           className="top-[40%] right-[10%] w-64 h-80 rotate-[5deg]"
           progress={scrollYProgress}

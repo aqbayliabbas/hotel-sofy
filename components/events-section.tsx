@@ -9,32 +9,32 @@ const events = [
         title: "Mariages Élégants",
         subtitle: "Le début de votre histoire",
         description: "Célébrez votre union dans un cadre raffiné avec un service traiteur exceptionnel et une attention aux moindres détails pour une journée inoubliable.",
-        image: "/assets/wide_shot_façade.png",
-        inset: "/assets/reception.png",
+        image: "/assets/wide_shot_façade.webp",
+        inset: "/assets/reception.webp",
         note: "Organisation complète"
     },
     {
         title: "Conférences & Séminaires",
         subtitle: "Efficience et Confort",
         description: "Des salles de réunion modernes et lumineuses, équipées pour garantir la productivité et le confort de vos collaborateurs.",
-        image: "/assets/reception 02.png",
-        inset: "/assets/chambres/chambre (1).png",
+        image: "/assets/reception 02.webp",
+        inset: "/assets/chambres/chambre (1).webp",
         note: "Équipements Audio/Vidéo"
     },
     {
         title: "Dîners de Gala",
         subtitle: "L'Art de Recevoir",
         description: "Impressionnez vos invités avec des menus gastronomiques personnalisés, créés par nos chefs pour ravir les palais les plus exigeants.",
-        image: "/assets/reception.png",
-        inset: "/assets/reception 02.png",
+        image: "/assets/reception.webp",
+        inset: "/assets/reception 02.webp",
         note: "Service Traiteur Premium"
     },
     {
         title: "Fêtes & Anniversaires",
         subtitle: "Des Moments de Joie",
         description: "Que ce soit pour un anniversaire intime ou une grande célébration familiale, nous créons l'ambiance parfaite pour vos festivités.",
-        image: "/assets/reception 02.png",
-        inset: "/assets/chambres/chambre (2).png",
+        image: "/assets/reception 02.webp",
+        inset: "/assets/chambres/chambre (2).webp",
         note: "Espaces Modulables"
     }
 ]

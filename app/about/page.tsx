@@ -17,7 +17,7 @@ export default function AboutPage() {
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
-                            backgroundImage: "url('/assets/wide_shot_façade.png')",
+                            backgroundImage: "url('/assets/wide_shot_façade.webp')",
                             filter: "brightness(0.7)"
                         }}
                     />
@@ -67,7 +67,7 @@ export default function AboutPage() {
                                 className="aspect-[4/5] overflow-hidden rounded-sm shadow-2xl"
                             >
                                 <img
-                                    src="/assets/reception.png"
+                                    src="/assets/reception.webp"
                                     alt="Hotel Sofy Interior"
                                     className="w-full h-full object-cover"
                                     loading="lazy"

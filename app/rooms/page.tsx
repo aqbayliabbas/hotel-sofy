@@ -16,7 +16,7 @@ export default function RoomsPage() {
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
-                            backgroundImage: "url('/assets/reception 02.png')",
+                            backgroundImage: "url('/assets/reception 02.webp')",
                             filter: "brightness(0.6)"
                         }}
                     />

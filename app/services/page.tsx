@@ -25,7 +25,7 @@ export default function ServicesPage() {
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
-                            backgroundImage: "url('/assets/reception.png')",
+                            backgroundImage: "url('/assets/reception.webp')",
                             filter: "brightness(0.6)"
                         }}
                     />

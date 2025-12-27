@@ -14,25 +14,25 @@ export function ServicesSection() {
             title: "Restaurant & Terrasse",
             description: "Savourez des plats délicieux et détendez-vous dans notre atmosphère accueillante.",
             icon: <Coffee size={24} />,
-            image: "/assets/reception.png"
+            image: "/assets/reception.webp"
         },
         {
             title: "Parking Privé Gratuit",
             description: "Un stationnement sécurisé et gratuit pour votre tranquillité d'esprit durant tout votre séjour.",
             icon: <Car size={24} />,
-            image: "/assets/wide_shot_façade.png"
+            image: "/assets/wide_shot_façade.webp"
         },
         {
             title: "Wi-Fi Haut Débit",
             description: "Restez connecté avec notre connexion internet rapide et gratuite disponible dans tout l'établissement.",
             icon: <WifiHigh size={24} />,
-            image: "/assets/chambres/chambre (4).png"
+            image: "/assets/chambres/chambre (4).webp"
         },
         {
             title: "Service 24h/24",
             description: "Une équipe dévouée à votre disposition jour et nuit pour répondre à tous vos besoins.",
             icon: <Bell size={24} />,
-            image: "/assets/reception 02.png"
+            image: "/assets/reception 02.webp"
         }
     ]
 

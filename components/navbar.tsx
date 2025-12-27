@@ -40,14 +40,14 @@ export function Navbar({
     <nav
       className={`fixed top-0 left-0 w-full z-50 flex items-center justify-between px-6 md:px-12 uppercase text-base tracking-widest font-medium transition-all duration-300 ${showWhiteBg
         ? 'bg-white shadow-md py-6'
-        : 'bg-transparent py-8 lg:py-16'
+        : 'bg-transparent py-8 xl:py-16'
         } ${showWhiteBg
           ? 'text-primary'
           : 'text-white'
         }`}
     >
       {/* Desktop Left Links */}
-      <div className="hidden lg:flex gap-6 items-center flex-1">
+      <div className="hidden xl:flex gap-6 items-center flex-1">
         {links.slice(0, 3).map((link) => (
           <Link key={link.href} href={link.href}>
             <FlipText>{link.label}</FlipText>
@@ -56,7 +56,7 @@ export function Navbar({
       </div>
 
       {/* Mobile Menu Trigger */}
-      <div className="lg:hidden flex-1 flex items-center">
+      <div className="xl:hidden flex-1 flex items-center">
         <Sheet>
           <SheetTrigger asChild>
             <Button
@@ -121,14 +121,10 @@ export function Navbar({
       </div>
 
       {/* Desktop Right Links & Info */}
-      <div className="hidden lg:flex gap-8 items-center justify-end flex-1">
+      <div className="hidden xl:flex gap-8 items-center justify-end flex-1">
         <Link href="/events">
           <FlipText>Événements</FlipText>
         </Link>
-        <div className="flex items-center gap-1.5">
-          <MapPin size={16} weight="thin" />
-          <span>Bouira, DZ</span>
-        </div>
         <div className="flex items-center gap-1.5 mr-4">
           <Phone size={16} weight="thin" />
           <span>026 73 51 28</span>
@@ -141,14 +137,15 @@ export function Navbar({
       </div>
 
       {/* Mobile Right */}
-      <div className="lg:hidden flex-1 flex justify-end items-center gap-4">
+      <div className="xl:hidden flex-1 flex justify-end items-center gap-4">
         <AuthModal>
           <button className="hover:opacity-70 p-2">
             <User size={26} weight="thin" />
           </button>
         </AuthModal>
-        <Link href="/contact" className="hover:opacity-70 p-2">
+        <Link href="/contact" className="flex items-center gap-2 hover:opacity-70 p-2">
           <Phone size={26} weight="thin" />
+          <span className="hidden md:block">026 73 51 28</span>
         </Link>
       </div>
     </nav>

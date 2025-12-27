@@ -16,7 +16,7 @@ export default function EventsPage() {
                     <div
                         className="absolute inset-0 bg-cover bg-center"
                         style={{
-                            backgroundImage: "url('/assets/wide_shot_façade.png')",
+                            backgroundImage: "url('/assets/wide_shot_façade.webp')",
                             filter: "brightness(0.6)"
                         }}
                     />
