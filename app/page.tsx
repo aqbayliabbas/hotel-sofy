@@ -59,7 +59,7 @@ export default function Home() {
               "/assets/chambres/chambre (3).webp",
               "/assets/chambres/chambre (4).webp",
               "/assets/chambres/chambre (5).webp",
-              "/assets/hero.jpg",
+              "/assets/hero.webp",
               // Repeat for infinite loop
               "/assets/wide_shot_façade.webp",
               "/assets/reception.webp",
@@ -69,7 +69,7 @@ export default function Home() {
               "/assets/chambres/chambre (3).webp",
               "/assets/chambres/chambre (4).webp",
               "/assets/chambres/chambre (5).webp",
-              "/assets/hero.jpg",
+              "/assets/hero.webp",
             ].map((src, i) => (
               <div key={i} className="min-w-[80vw] md:min-w-[400px] aspect-square overflow-hidden group border border-border/10">
                 <img
